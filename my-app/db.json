@@ -1,0 +1,38 @@
+{
+  "prods": [
+    {
+      "id": "1",
+      "title": "a title",
+      "price": 100  ,
+      "cat": 1
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "price": 200  ,
+      "cat": 1
+    },
+    {
+      "id": "4",
+      "title": "another title",
+      "price": 200  ,
+      "cat": 2
+    },
+    {
+      "id": "5",
+      "title": "another title",
+      "price": 200  ,
+      "cat": 1
+    },
+    {
+      "title": "last title",
+      "price": "250",
+      "id": "6" 
+    },
+    {
+      "id": "3b7b",
+      "title": "last last title",
+      "price": "250"
+    }   
+  ]
+}
