@@ -11,7 +11,7 @@ export function Prod() {
 
     useEffect(() => {
         dispatch(getDataAsync())
-    }, [refresh])
+    }, [dispatch, refresh])
 
     const handleDel = (id) => {
         console.log(id);

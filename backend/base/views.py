@@ -24,7 +24,6 @@ def about(req):
 def index(req):
     return Response('hello')
 
-# @api_view(['GET','POST'])
 @permission_classes([IsAuthenticated])
 class Products(APIView):
     def get(self, request):
