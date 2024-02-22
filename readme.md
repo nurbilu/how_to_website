@@ -11,5 +11,5 @@
 
 
 #### hope well 
-    this is my code do as you will - if u earn money for this goodluck in the future - because its a mead code though  
+    this is my code do as you will - if u earn money for this goodluck in the future - because its a mead code  
     LOL
