@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { loginAsync, selectlogged } from './loginSlice'
+import { loginAsync, selectlogged ,logoutAsync} from './loginSlice'
 const Login = () => {
     const logged = useSelector(selectlogged);
     const dispatch = useDispatch();
@@ -10,7 +10,7 @@ const Login = () => {
         <div>Login
             <hr></hr>
             {logged ?
-                <button onClick={() => dispatch(loginAsync({ username, password }))}>Logout</button> :
+                <button onClick={() => dispatch(logoutAsync({ username, password }))}>Logout</button> :
                 <div> user name:<input onChange={(e) => setusername(e.target.value)}></input>
                     pwd: <input onChange={(e) => setpassword(e.target.value)}></input>
                     <button onClick={() => dispatch(loginAsync({ username, password }))}>Login</button></div>}

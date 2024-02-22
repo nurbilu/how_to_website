@@ -14,6 +14,14 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = '__all__'
+        
+    @classmethod
+    def get_token(cls, user):
+        token = super().get_token(user)
+        # Add custom claims
+        token['username'] = user.username
+        # ...
+        return token
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
@@ -24,12 +32,12 @@ def about(req):
 def index(req):
     return Response('hello')
 
-@permission_classes([IsAuthenticated])
+# @permission_classes([IsAuthenticated])
 class Products(APIView):
     def get(self, request):
         my_model = Product.objects.all()
         serializer = ProductSerializer(my_model, many=True)
-        return Response(serializer.data)
+        return Response(serializer.data) 
     
     def post(self, request):
         # usr =request.user
