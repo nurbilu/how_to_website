@@ -7,7 +7,7 @@
 ### status
     1. react is all good 
     2. dj need adjustments on view.py for : all CRUD but GET (works but auth is not)
-    3. auth is working weird - need to reslove - doesnt receive access token ? 
+    3. auth is working weird - need to reslove - products doesnt receive access token ? 
 
 
 #### hope well 
